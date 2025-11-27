@@ -13,12 +13,27 @@ I developed an AI-driven attendance system that identifies individuals using rea
 - Automatic attendance logging to structured records
 - Clean, modular project architecture suitable for scaling
 
-## API Endpoints
-- **Register User:** `/ai/collect_faces?id=<ID>&name=<Name>`  
-  Captures face data and updates the recognition model.
+##API Endpoints
 
-- **Recognize User:** `/ai/recognize_faces`  
-  Identifies users and logs attendance.
+- **Register User**:
+GET /ai/collect_faces?id=<ID>&name=<Name>
+Captures face data and updates the recognition model.
+
+- **Recognize User**:
+GET /ai/recognize_faces
+Identifies users and logs attendance.
+
+- **Face Tracking**:
+GET /ai/face_traking?time=<seconds>&is_sheet=<true|false>
+Tracks faces for an exam or session.
+
+- **Reset Data**:
+GET /ai/reset_data
+Clears all training data.
+
+- **Detect Eyes**:
+GET /ai/detect_eyes
+Detects eyes from the webcam feed and returns the number of eyes detected.
 
 ## Skills Demonstrated
 - Python (OpenCV, scikit-learn, Flask)
