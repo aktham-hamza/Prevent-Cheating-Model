@@ -31,10 +31,6 @@ Tracks faces for an exam or session.
 GET /ai/reset_data
 Clears all training data.
 
-- **Detect Eyes**:
-GET /ai/detect_eyes
-Detects eyes from the webcam feed and returns the number of eyes detected.
-
 ## Skills Demonstrated
 - Python (OpenCV, scikit-learn, Flask)
 - Machine learning model training & evaluation
